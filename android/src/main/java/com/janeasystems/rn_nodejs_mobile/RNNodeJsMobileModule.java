@@ -206,9 +206,8 @@ public class RNNodeJsMobileModule extends ReactContextBaseJavaModule implements 
       final List<String> command = new ArrayList<String>();
 
       command.add("node");
-      command.add(absoluteScriptPath);
-
       command.addAll(args);
+      command.add(absoluteScriptPath);
 
       final boolean redirectOutputToLogcat = extractRedirectOutputToLogcatOption(options);
 
